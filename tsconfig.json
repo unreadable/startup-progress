@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es5",
+        "removeComments": true,
+        "noImplicitAny": true,
+        "preserveConstEnums": true,
+        "sourceMap":true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "outDir": "build",
+        "types": ["node", "express", "jest"],
+        "baseUrl": ".",
+        "paths": {
+            "@src/*": ["src/*"],
+            "@models/*": ["src/models/*"]
+        },
+    },
+    "include": ["**/*.ts"],
+    "exclude": ["node_modules"],
+}
